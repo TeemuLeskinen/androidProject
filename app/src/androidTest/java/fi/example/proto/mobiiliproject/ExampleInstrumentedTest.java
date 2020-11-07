@@ -1,4 +1,4 @@
-package projekti.mobiili;
+package fi.example.proto.mobiiliproject;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("projekti.mobiili", appContext.getPackageName());
+        assertEquals("fi.example.proto.mobiiliproject", appContext.getPackageName());
     }
 }

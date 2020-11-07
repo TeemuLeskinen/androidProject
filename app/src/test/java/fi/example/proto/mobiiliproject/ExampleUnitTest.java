@@ -1,4 +1,4 @@
-package projekti.mobiili;
+package fi.example.proto.mobiiliproject;
 
 import org.junit.Test;
 

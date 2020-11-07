@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="fi.example.proto.mobiiliproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="fi.example.proto.mobiiliproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_kartta"
+        android:name="fi.example.proto.mobiiliproject.ui.kartta.KarttaFragment"
+        android:label="@string/Kartta"
+        tools:layout="@layout/fragment_kartta" />
+
+    <fragment
+        android:id="@+id/nav_tuotteet"
+        android:name="fi.example.proto.mobiiliproject.ui.tuotteet.TuotteetFragment"
+        android:label="Tuotteet"
+        tools:layout="@layout/fragment_tuotteet" />
+    <fragment
+        android:id="@+id/nav_tilaus"
+        android:name="fi.example.proto.mobiiliproject.ui.tilaus.TilausFragment"
+        android:label="Tilaus"
+        tools:layout="@layout/fragment_tilaus" />
+</navigation>
