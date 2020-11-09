@@ -1,16 +1,16 @@
-package fi.example.proto.mobiiliproject.ui.gallery;
+package fi.example.proto.mobiiliproject.ui.kirjaudu;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class KirjauduViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public KirjauduViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Gallery");
+        mText.setValue("Kirjaudu");
     }
 
     public LiveData<String> getText() {
