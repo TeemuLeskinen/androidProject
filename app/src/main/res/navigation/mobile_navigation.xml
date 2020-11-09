@@ -13,10 +13,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="fi.example.proto.mobiiliproject.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_kirjaudu"
+        android:name="fi.example.proto.mobiiliproject.ui.kirjaudu.KirjauduFragment"
+        android:label="@string/Kirjaudu"
+        tools:layout="@layout/fragment_kirjaudu" />
 
     <fragment
         android:id="@+id/nav_kartta"
