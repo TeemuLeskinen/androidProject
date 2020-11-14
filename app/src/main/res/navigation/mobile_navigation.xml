@@ -13,25 +13,25 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_kirjaudu"
-        android:name="fi.example.proto.mobiiliproject.ui.kirjaudu.KirjauduFragment"
+        android:id="@+id/nav_sign_in"
+        android:name="fi.example.proto.mobiiliproject.ui.Sign_in.Sign_inFragment"
         android:label="@string/Kirjaudu"
-        tools:layout="@layout/fragment_kirjaudu" />
+        tools:layout="@layout/fragment_sign_in" />
 
     <fragment
-        android:id="@+id/nav_kartta"
-        android:name="fi.example.proto.mobiiliproject.ui.kartta.KarttaFragment"
+        android:id="@+id/nav_map"
+        android:name="fi.example.proto.mobiiliproject.ui.map.MapFragment"
         android:label="@string/Kartta"
-        tools:layout="@layout/fragment_kartta" />
+        tools:layout="@layout/fragment_map" />
 
     <fragment
-        android:id="@+id/nav_tuotteet"
-        android:name="fi.example.proto.mobiiliproject.ui.tuotteet.TuotteetFragment"
+        android:id="@+id/nav_products"
+        android:name="fi.example.proto.mobiiliproject.ui.products.ProductsFragment"
         android:label="Tuotteet"
-        tools:layout="@layout/fragment_tuotteet" />
+        tools:layout="@layout/fragment_products" />
     <fragment
-        android:id="@+id/nav_tilaus"
-        android:name="fi.example.proto.mobiiliproject.ui.tilaus.TilausFragment"
+        android:id="@+id/nav_order"
+        android:name="fi.example.proto.mobiiliproject.ui.order.OrderFragment"
         android:label="Tilaus"
-        tools:layout="@layout/fragment_tilaus" />
+        tools:layout="@layout/fragment_order" />
 </navigation>

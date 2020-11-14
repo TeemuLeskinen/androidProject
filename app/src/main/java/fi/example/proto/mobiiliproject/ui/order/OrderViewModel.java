@@ -1,16 +1,16 @@
-package fi.example.proto.mobiiliproject.ui.kirjaudu;
+package fi.example.proto.mobiiliproject.ui.order;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class KirjauduViewModel extends ViewModel {
+public class OrderViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public KirjauduViewModel() {
+    public OrderViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Kirjaudu");
+        mText.setValue("Tilaussivu");
     }
 
     public LiveData<String> getText() {

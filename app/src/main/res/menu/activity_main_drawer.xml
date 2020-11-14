@@ -9,19 +9,19 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_tuotteet"
+            android:id="@+id/nav_products"
             android:icon="@drawable/ic_food"
             android:title="@string/tuotteet" />
         <item
-            android:id="@+id/nav_tilaus"
+            android:id="@+id/nav_order"
             android:icon="@drawable/ic_basket"
             android:title="@string/Tilaus" />
         <item
-            android:id="@+id/nav_kirjaudu"
-            android:icon="@drawable/ic_kirjaudu"
+            android:id="@+id/nav_sign_in"
+            android:icon="@drawable/ic_sign_in"
             android:title="@string/Kirjaudu" />
         <item
-            android:id="@+id/nav_kartta"
+            android:id="@+id/nav_map"
             android:icon="@drawable/ic_map"
             android:title="@string/Kartta" />
     </group>

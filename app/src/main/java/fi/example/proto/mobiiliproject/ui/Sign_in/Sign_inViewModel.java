@@ -1,16 +1,16 @@
-package fi.example.proto.mobiiliproject.ui.tilaus;
+package fi.example.proto.mobiiliproject.ui.Sign_in;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class TilausViewModel extends ViewModel {
+public class Sign_inViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public TilausViewModel() {
+    public Sign_inViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Tilaussivu");
+        mText.setValue("Kirjaudu");
     }
 
     public LiveData<String> getText() {
