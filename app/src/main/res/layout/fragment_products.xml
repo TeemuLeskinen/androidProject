@@ -6,10 +6,10 @@
     android:id="@+id/Tuotteet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.tuotteet.TuotteetFragment">
+    tools:context=".ui.products.ProductsFragment">
 
     <TextView
-        android:id="@+id/text_tuotteet"
+        android:id="@+id/text_products"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

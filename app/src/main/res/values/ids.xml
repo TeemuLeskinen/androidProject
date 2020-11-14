@@ -2,4 +2,8 @@
 <resources>
     <item name="text_kirjaudu" type="id" />
     <item name="nav_kirjaudu" type="id" />
+    <item name="nav_products" type="id" />
+    <item name="text_products" type="id" />
+    <item name="nav_map" type="id" />
+    <item name="text_map" type="id" />
 </resources>

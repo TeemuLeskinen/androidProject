@@ -6,11 +6,11 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_tuotteet" />
+    <string name="menu_products" />
     <string name="tuotteet">Tuotteet</string>
     <string name="Tilaus">Tilaus</string>
-    <string name="menu_kartta" />
+    <string name="menu_map" />
     <string name="Kartta">Kartta</string>
-    <string name="menu_kirjaudu" />
+    <string name="menu_sign_in" />
     <string name="Kirjaudu">Kirjaudu</string>
 </resources>
