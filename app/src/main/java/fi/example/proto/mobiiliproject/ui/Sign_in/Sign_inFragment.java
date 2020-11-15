@@ -20,8 +20,8 @@ public class Sign_inFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         Sign_inViewModel sign_inViewModel = new ViewModelProvider(this).get(Sign_inViewModel.class);
         View root = inflater.inflate(R.layout.fragment_sign_in, container, false);
-        final TextView textView = root.findViewById(R.id.text_sign_in);
-        sign_inViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        //final TextView textView = root.findViewById(R.id.text_sign_in);
+        //sign_inViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 }
