@@ -16,7 +16,11 @@
         android:id="@+id/nav_sign_in"
         android:name="fi.example.proto.mobiiliproject.ui.Sign_in.Sign_inFragment"
         android:label="@string/Kirjaudu"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_nav_sign_in_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_map"
