@@ -36,18 +36,5 @@
             android:textSize="48dp"
             android:gravity="center_horizontal"/>
 
-        <Button
-            android:id="@+id/menuB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/menuOtsikko"
-            android:gravity="center_horizontal"/>
-        <Button
-            android:id="@+id/mapB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Find us"
-            android:gravity="center_horizontal"/>
-
     </LinearLayout>
 </RelativeLayout>

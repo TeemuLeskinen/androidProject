@@ -20,6 +20,8 @@ import fi.example.proto.mobiiliproject.ui.products.ProductsFragment;
 
 public class ProductsFragment extends Fragment {
 
+    Button buttonOrder1, buttonOrder2;
+
     public ProductsFragment(){
         //empty public contructor
     }
@@ -28,6 +30,20 @@ public class ProductsFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         ProductsViewModel productsViewModel = new ViewModelProvider(this).get(ProductsViewModel.class);
         View viewProducts = inflater.inflate(R.layout.fragment_products, container, false);
+
+        buttonOrder1 = (Button) viewProducts.findViewById(R.id.buttonOrder1);
+        buttonOrder1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //
+            }
+        });
+
+        buttonOrder2 = (Button) viewProducts.findViewById(R.id.buttonOrder2);
+        buttonOrder2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                //
+            }
+        });
 
 
 
