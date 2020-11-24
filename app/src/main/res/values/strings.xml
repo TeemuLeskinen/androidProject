@@ -13,6 +13,13 @@
     <string name="Kartta">Kartta</string>
     <string name="menu_sign_in" />
     <string name="Kirjaudu">Kirjaudu</string>
+    <string name="username">Username</string>
+    <string name="log_in">Kirjaudu</string>
+    <string name="password">Salasana</string>
+    <string name="new_user">Uusi käyttäjä? Rekisteröidy tästä</string>
+    <string name="palauteteksti">Palautteesi on meille tärkeä. Kerro missä onnistuimme, mitä voisimme kehittää tai vaikka mitä tuotteita meiltä vielä puuttuu</string>
+    <string name="compose_email">Lähetä sähköpostia</string>
+    <string name="palautekuva">kalakeitto.jpg</string>
 
     <string name="menuOtsikko">RUOKALISTA</string>
     <string name="menuKuvaus">Täydellinen myyntipuhe ja kuvaus tähän</string>
