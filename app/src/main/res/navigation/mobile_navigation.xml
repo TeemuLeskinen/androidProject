@@ -37,5 +37,10 @@
         android:id="@+id/nav_order"
         android:name="fi.example.proto.mobiiliproject.ui.order.OrderFragment"
         android:label="Tilaus"
-        tools:layout="@layout/fragment_order" />
+        tools:layout="@layout/fragment_tilaus" />
+    <fragment
+        android:id="@+id/nav_palaute"
+        android:name="fi.example.proto.mobiiliproject.ui.palaute.PalauteFragment"
+        android:label="Palaute"
+        tools:layout="@layout/fragment_palaute"/>
 </navigation>

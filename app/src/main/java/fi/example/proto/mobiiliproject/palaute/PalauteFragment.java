@@ -35,13 +35,13 @@ public class PalauteFragment extends Fragment {
         return palauteview;
     }
 
+    @SuppressLint("IntentReset")
     private void sendEmail() {
 
             Log.i("Send email", "");
             String[] TO = {"t8foju00@students.oamk.fi"};
             //String[] CC = {""};
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
-
             emailIntent.setData(Uri.parse("mailto:"));
             emailIntent.setType("text/plain");
             emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
