@@ -24,5 +24,8 @@
             android:id="@+id/nav_map"
             android:icon="@drawable/ic_map"
             android:title="@string/Kartta" />
+        <item
+            android:id="@+id/nav_palaute"
+            android:title="Palaute"/>
     </group>
 </menu>

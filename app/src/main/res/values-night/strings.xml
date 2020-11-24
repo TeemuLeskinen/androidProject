@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="palauteteksti">Palautteesi on meille tärkeä. Kerro missä onnistuimme, mitä voisimme kehittää tai vaikka mitä tuotteita meiltä vielä puuttuu</string>
+    <string name="compose_email">Lähetä sähköpostia</string>
+    <string name="palautekuva">kalakeitto.jpg</string>
+</resources>
