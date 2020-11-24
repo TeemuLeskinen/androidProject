@@ -13,8 +13,22 @@
     <string name="Kartta">Kartta</string>
     <string name="menu_sign_in" />
     <string name="Kirjaudu">Kirjaudu</string>
-    <string name="username">Username</string>
-    <string name="log_in">Kirjaudu</string>
-    <string name="password">Salasana</string>
-    <string name="new_user">Uusi käyttäjä? Rekisteröidy tästä</string>
+
+    <string name="menuOtsikko">RUOKALISTA</string>
+    <string name="menuKuvaus">Täydellinen myyntipuhe ja kuvaus tähän</string>
+
+    <string name="menuVakio">Vakivalikoimamme</string>
+    <string name="menuKausi">Kausivalikoimamme</string>
+
+    <string name="annos1">KALAKEITTO</string>
+    <string name="annos2">HERNEKEITTO</string>
+    <string name="annos3">KARJALANPAISTI</string>
+    <string name="annos4">MAKKARAKEITTO</string>
+    <string name="annos5">RÖSSYPOTUT</string>
+
+    <string name="kuvaus1">Perinteinen perämeren kalakeitto.</string>
+    <string name="kuvaus2">Torstain tuttu hernekeitto.</string>
+    <string name="kuvaus3">Mureaksi haudutettu karjalanpaisti.</string>
+    <string name="kuvaus4">Kaikkien lemppari makkarakeitto.</string>
+    <string name="kuvaus5">Oululaisille omintakeinen rössypotut.</string>
 </resources>

@@ -13,7 +13,7 @@ public class ProductsViewModel extends ViewModel {
         mText.setValue("Tuotesivu");
     }
 
-    public LiveData<String> getText() {
+   /* public LiveData<String> getText() {
         return mText;
-    }
+    }*/
 }
