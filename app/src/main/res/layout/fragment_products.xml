@@ -84,9 +84,9 @@
 
                     <Button
                         android:id="@+id/buttonOrder1"
+                        android:background="@drawable/custom_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:gravity="center"
                         android:paddingLeft="10dp"
                         android:paddingTop="10dp"
@@ -136,6 +136,7 @@
 
                     <Button
                         android:id="@+id/buttonOrder2"
+                        android:background="@drawable/custom_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -274,6 +275,46 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/rossyp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/joulup" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ID6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/annos6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="@string/kuvaus6" />
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
