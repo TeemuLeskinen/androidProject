@@ -4,7 +4,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_products" />
     <string name="tuotteet">Tuotteet</string>
@@ -20,22 +19,20 @@
     <string name="palauteteksti">Palautteesi on meille tärkeä. Kerro missä onnistuimme, mitä voisimme kehittää tai vaikka mitä tuotteita meiltä vielä puuttuu</string>
     <string name="compose_email">Lähetä sähköpostia</string>
     <string name="palautekuva">kalakeitto.jpg</string>
-
     <string name="menuOtsikko">RUOKALISTA</string>
     <string name="menuKuvaus">Täydellinen myyntipuhe ja kuvaus tähän</string>
-
     <string name="menuVakio">Vakivalikoimamme</string>
     <string name="menuKausi">Kausivalikoimamme</string>
-
     <string name="annos1">KALAKEITTO</string>
     <string name="annos2">HERNEKEITTO</string>
     <string name="annos3">KARJALANPAISTI</string>
     <string name="annos4">MAKKARAKEITTO</string>
     <string name="annos5">RÖSSYPOTUT</string>
-
     <string name="kuvaus1">Perinteinen perämeren kalakeitto.</string>
     <string name="kuvaus2">Torstain tuttu hernekeitto.</string>
     <string name="kuvaus3">Mureaksi haudutettu karjalanpaisti.</string>
     <string name="kuvaus4">Kaikkien lemppari makkarakeitto.</string>
     <string name="kuvaus5">Oululaisille omintakeinen rössypotut.</string>
+    <string name="etusivu">Etusivu</string>
+    <string name="palaute">Palaute</string>
 </resources>

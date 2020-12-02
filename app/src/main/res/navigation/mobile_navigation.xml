@@ -37,7 +37,11 @@
         android:id="@+id/nav_products"
         android:name="fi.example.proto.mobiiliproject.ui.products.ProductsFragment"
         android:label="Tuotteet"
-        tools:layout="@layout/fragment_products" />
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_nav_products_to_nav_order"
+            app:destination="@id/nav_order" />
+    </fragment>
     <fragment
         android:id="@+id/nav_order"
         android:name="fi.example.proto.mobiiliproject.ui.order.OrderFragment"
