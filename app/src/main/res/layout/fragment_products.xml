@@ -29,6 +29,7 @@
                 android:text="@string/menuOtsikko"
                 android:textSize="48dp" />
 
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -94,8 +95,8 @@
                         android:paddingBottom="10dp"
                         android:text="Tilaa" />
 
-                </LinearLayout>
 
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -185,6 +186,18 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
                         android:text="@string/kuvaus3" />
+
+                    <Button
+                        android:id="@+id/buttonOrder3"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Tilaa" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -224,6 +237,18 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
                         android:text="@string/kuvaus4"></TextView>
+
+                    <Button
+                        android:id="@+id/buttonOrder4"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Tilaa" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -272,6 +297,18 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
                         android:text="@string/kuvaus5" />
+
+                    <Button
+                        android:id="@+id/buttonOrder5"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Tilaa" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -311,6 +348,17 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
                         android:text="@string/kuvaus6" />
+                    <Button
+                        android:id="@+id/buttonOrder6"
+                        android:background="@drawable/custom_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Tilaa" />
                 </LinearLayout>
 
             </LinearLayout>
