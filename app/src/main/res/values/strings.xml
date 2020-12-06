@@ -13,8 +13,18 @@
     <string name="Kartta">Kartta</string>
     <string name="menu_sign_in" />
     <string name="Kirjaudu">Kirjaudu</string>
-    <string name="username">Username</string>
+    <string name="username">Käyttäjätunnus</string>
     <string name="log_in">Kirjaudu</string>
     <string name="password">Salasana</string>
     <string name="new_user">Uusi käyttäjä? Rekisteröidy tästä</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="sign_up">Rekisteröidy</string>
+    <string name="first_name">Etunimi</string>
+    <string name="last_name">Sukunimi</string>
+    <string name="email">Sähköposti</string>
 </resources>
