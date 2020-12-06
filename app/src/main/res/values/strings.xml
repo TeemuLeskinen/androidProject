@@ -49,5 +49,19 @@
     <string name="order_page">Tässä voit tilata. Voit tilata myös soittamalla 987 654 321</string>
     <string name="etusivu">Etusivu</string>
     <string name="palaute">Palaute</string>
+    <string name="kiitos_tilauksesta">Kiitos tilauksesta</string>
+    <string name="Kassalle">Kassalle</string>
+    <string name="jatka_ostoksia">Jatka ostoksia</string>
+    <string name="m_r">Määrä:</string>
+    <string name="kalakeitto">Kalakeitto</string>
+
+    <string-array name="quantity_string_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5(Max)</item>
+    </string-array>
+
 
 </resources>

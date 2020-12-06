@@ -7,4 +7,5 @@
     <item name="nav_map" type="id" />
     <item name="text_map" type="id" />
     <item name="text_home" type="id" />
+    <item name="text_order" type="id" />
 </resources>
