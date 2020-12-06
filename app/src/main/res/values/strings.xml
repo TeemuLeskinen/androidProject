@@ -28,11 +28,13 @@
     <string name="annos3">KARJALANPAISTI</string>
     <string name="annos4">MAKKARAKEITTO</string>
     <string name="annos5">RÖSSYPOTUT</string>
+
     <string name="kuvaus1">Perinteinen perämeren kalakeitto.</string>
     <string name="kuvaus2">Torstain tuttu hernekeitto.</string>
     <string name="kuvaus3">Mureaksi haudutettu karjalanpaisti.</string>
     <string name="kuvaus4">Kaikkien lemppari makkarakeitto.</string>
     <string name="kuvaus5">Oululaisille omintakeinen rössypotut.</string>
+    <string name="order_page">Tässä voit tilata. Voit tilata myös soittamalla 987 654 321</string>
     <string name="etusivu">Etusivu</string>
     <string name="palaute">Palaute</string>
 </resources>
