@@ -1,4 +1,4 @@
-package fi.example.proto.mobiiliproject.ui.palaute;
+package fi.example.proto.mobiiliproject.palaute;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import fi.example.proto.mobiiliproject.R;
-import fi.example.proto.mobiiliproject.palaute.PalauteViewModel;
+//import fi.example.proto.mobiiliproject.palaute.PalauteViewModel;
 
 public class PalauteFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
