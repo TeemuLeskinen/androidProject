@@ -32,6 +32,8 @@
         android:layout_height="259dp"
         android:src="@drawable/kalakeitto"
         android:layout_marginTop="30dp"
-        android:contentDescription="@string/palautekuva"/>
+        android:contentDescription="@string/palautekuva"
+    />
+
 
 </LinearLayout>
