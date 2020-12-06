@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:text="@string/palauteteksti"
+        android:text="palaute"
 
         android:textSize="30sp"
         android:textStyle="bold"
@@ -20,7 +20,7 @@
         android:id="@+id/sendEmail"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/compose_email"
+        android:text="lähetä sähköpostia"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="100dp"
@@ -30,8 +30,10 @@
         android:id="@+id/imageButton"
         android:layout_width="match_parent"
         android:layout_height="259dp"
-        android:src="@drawable/kalakeitto"
+
         android:layout_marginTop="30dp"
-        android:contentDescription="@string/palautekuva"/>
+        android:contentDescription="palautekuva"
+    />
+
 
 </LinearLayout>
