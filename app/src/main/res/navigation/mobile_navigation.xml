@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_nav_sign_in_to_nav_home"
             app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_sign_in_to_nav_register"
+            app:destination="@id/nav_register" />
     </fragment>
 
     <fragment
@@ -46,10 +49,24 @@
         android:id="@+id/nav_order"
         android:name="fi.example.proto.mobiiliproject.ui.order.OrderFragment"
         android:label="Tilaus"
-        tools:layout="@layout/fragment_tilaus" />
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="fi.example.proto.mobiiliproject.ui.register.RegisterFragment"
+        android:label="Rekisteröidy"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_nav_register_to_nav_sign_in"
+            app:destination="@id/nav_sign_in" />
+    </fragment>
+        
     <fragment
         android:id="@+id/nav_palaute"
         android:name="fi.example.proto.mobiiliproject.ui.palaute.PalauteFragment"
         android:label="Palaute"
         tools:layout="@layout/fragment_palaute"/>
+      
+     
+
 </navigation>

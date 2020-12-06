@@ -1,32 +1,31 @@
 package fi.example.proto.mobiiliproject.ui.Sign_in;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
-import com.google.android.material.snackbar.Snackbar;
+
 
 import fi.example.proto.mobiiliproject.R;
-import fi.example.proto.mobiiliproject.ui.home.HomeFragment;
-import fi.example.proto.mobiiliproject.ui.products.ProductsFragment;
 
 public class Sign_inFragment extends Fragment {
 
-    Button btnLogIn;
+    Button btnLogIn; 
+    TextView txtViewRegister;
+
+    EditText text_input_first_name, text_input_last_name, text_input_email, text_input_username, text_input_password ;
 
     public Sign_inFragment(){
         //Required empty public constructor
@@ -38,12 +37,20 @@ public class Sign_inFragment extends Fragment {
         View view_log_in = inflater.inflate(R.layout.fragment_sign_in, container, false);
 
     btnLogIn = view_log_in.findViewById(R.id.btn_login) ;
+    txtViewRegister = view_log_in.findViewById(R.id.textview_register) ;
 
     btnLogIn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Navigation.findNavController(view_log_in).navigate(R.id.action_nav_sign_in_to_nav_home);
 
+            Navigation.findNavController(view_log_in).navigate(R.id.action_nav_sign_in_to_nav_home);
+        }
+    });
+
+    txtViewRegister.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Navigation.findNavController(view_log_in).navigate(R.id.action_nav_sign_in_to_nav_register);
         }
     });
 
