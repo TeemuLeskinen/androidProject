@@ -8,25 +8,33 @@
     android:layout_height="fill_parent"
     tools:context=".ui.products.ProductsFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:src="@drawable/banner_slogan" />
+
     <ScrollView
         android:id="@+id/ScrollViewID"
         android:layout_width="fill_parent"
         android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
+            android:paddingTop="300dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp">
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/menuOtsikko"
+                android:fontFamily="sans-serif"
                 android:textSize="48dp" />
 
 
@@ -35,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/menuKuvaus"
+                android:fontFamily="sans-serif"
                 android:textSize="16dp" />
 
             <TextView
@@ -362,6 +371,12 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/banner_slogan" />
 
         </LinearLayout>
     </ScrollView>
