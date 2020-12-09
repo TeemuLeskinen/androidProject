@@ -1,4 +1,4 @@
-package fi.example.proto.mobiiliproject.palaute;
+package fi.example.proto.mobiiliproject.ui.palaute;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
