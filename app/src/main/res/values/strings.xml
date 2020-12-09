@@ -35,4 +35,6 @@
     <string name="kuvaus6">Suomalaiseen maitoon keitetty perinteinen joulupuuro.</string>
     <string name="location_title">Missä olemme</string>
     <string name="location_desc">Tammikuussa 2021 jatkamme tuttuun tapaan Oulun torinrannassa toripolliisin tuntumassa. Tarkista tarkempi sijainti ja reittitedot kätevästi GoogleMapsista.</string>
+    <string name="nav_subtext1">Ravintola SOPPA</string>
+    <string name="nav_subtext2">Suomalainen Perinneruoka | Finnish Traditional Food</string>
 </resources>
