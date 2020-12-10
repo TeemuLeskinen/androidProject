@@ -28,5 +28,10 @@
             android:id="@+id/nav_palaute"
             android:icon="@drawable/ic_feedback"
             android:title="@string/palaute"/>
+        <item
+            android:id="@+id/nav_company_order"
+            android:icon="@drawable/ic_feedback"
+            android:title="Yritystilaus"
+            android:visible="true"/>
     </group>
 </menu>
