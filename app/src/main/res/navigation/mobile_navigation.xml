@@ -66,6 +66,11 @@
         android:name="fi.example.proto.mobiiliproject.ui.palaute.PalauteFragment"
         android:label="Palaute"
         tools:layout="@layout/fragment_palaute"/>
+    <fragment
+        android:id="@+id/nav_company_order"
+        android:name="fi.example.proto.mobiiliproject.ui.company_order.CompanyOrderFragment"
+        android:label="Yritystilaus"
+        tools:layout="@layout/fragment_order_company"/>
       
      
 

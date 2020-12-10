@@ -43,12 +43,12 @@ public class CompanyOrderFragment extends Fragment {
 
 
         Spinner spinner = orderview.findViewById(R.id.spinner);
-        spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
+        //spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
         //
 
 
         ArrayAdapter aa = new ArrayAdapter(this.getActivity(), android.R.layout.simple_spinner_item, categories);
-        aa.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        //aa.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         spinner.setAdapter(aa);
 
 
@@ -83,7 +83,7 @@ public class CompanyOrderFragment extends Fragment {
         return orderview;
     }
 
-    @SuppressLint("IntentReset")
+    /*@SuppressLint("IntentReset")
     private void sendEmail() {
 
         Log.i("Send email", "");
@@ -104,5 +104,5 @@ public class CompanyOrderFragment extends Fragment {
         } catch (android.content.ActivityNotFoundException ex) {
 
         }
-    }
+    }*/
 }
