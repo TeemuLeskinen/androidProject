@@ -8,10 +8,7 @@
     android:layout_height="fill_parent"
     tools:context=".ui.products.ProductsFragment">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="325dp"
-        android:src="@drawable/banner_slogan" />
+
 
     <ScrollView
         android:id="@+id/ScrollViewID"
@@ -24,10 +21,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingTop="300dp"
+            android:paddingTop="5dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:src="@drawable/banner_slogan" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -94,15 +95,21 @@
 
                     <Button
                         android:id="@+id/buttonOrder1"
-                        android:background="@drawable/custom_button"
+                        style="@style/Widget.AppCompat.Button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTintMode="add"
                         android:gravity="center"
+                        android:insetLeft="0dp"
                         android:paddingLeft="10dp"
                         android:paddingTop="10dp"
                         android:paddingRight="10dp"
                         android:paddingBottom="10dp"
-                        android:text="Tilaa" />
+                        android:text="Tilaa"
+                        android:visibility="visible"
+                        app:iconTintMode="add"
+                        tools:visibility="visible" />
 
 
                 </LinearLayout>
