@@ -4,4 +4,14 @@
     <string name="compose_email">Lähetä sähköpostia</string>
     <string name="palautekuva">kalakeitto.jpg</string>
     <string name="order_page">Tässä voit tilata. Voit tilata myös soittamalla 987 654 321</string>
+    <string name="ruokalaji">Ruokalaji:</string>
+    <string name="l_het">Lähetä</string>
+    <string name="p_iv">Päivä:</string>
+    <string name="day">11/11/2020</string>
+    <string name="time">Kellonaika:</string>
+    <string name="ordertime">00:00</string>
+    <string name="amount">Määrä:</string>
+    <string name="order_amount">Henkilöä/litraa</string>
+    <string name="address">Osoite:</string>
+    <string name="more">Lisätietoja:</string>
 </resources>
