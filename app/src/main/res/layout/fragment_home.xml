@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/etusivu"
+            android:text="Etusivu"
             android:textSize="48sp"
             android:gravity="center_horizontal"/>
 

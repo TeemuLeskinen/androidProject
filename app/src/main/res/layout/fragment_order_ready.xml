@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="20sp"
-        android:text="@string/kiitos_tilauksesta" />
+        android:text="string/kiitos_tilauksesta" />
 
     <Space
         android:layout_width="match_parent"
@@ -27,5 +27,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/jatka_ostoksia" />
+        android:text="string/jatka_ostoksia" />
 </LinearLayout>

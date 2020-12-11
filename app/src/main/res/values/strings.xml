@@ -47,4 +47,9 @@
     <string name="kuvaus3">Mureaksi haudutettu karjalanpaisti.</string>
     <string name="kuvaus4">Kaikkien lemppari makkarakeitto.</string>
     <string name="kuvaus5">Oululaisille omintakeinen rössypotut.</string>
+    <string name="kuvaus6">Suomalaiseen maitoon keitetty jouluinen riisipuuro.</string>
+    <string name="location_value">Sijaintimme</string>
+    <string name="location_desc">Täällä olemme.</string>
+    <string name="etusivu">Etusivu</string>
+    <string name="palaute">Palaute</string>
 </resources>
