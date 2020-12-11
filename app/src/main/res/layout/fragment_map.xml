@@ -56,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Kartta"
                 android:background="@drawable/custom_button"/>
+
         </LinearLayout>
 
     </ScrollView>
