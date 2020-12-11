@@ -22,13 +22,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import fi.example.proto.mobiiliproject.R;
 
 public class MapFragment extends Fragment {
-    Button buttonMap;
+    Button buttonMap1;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View mapView = inflater.inflate(R.layout.fragment_map, container, false);
-        buttonMap = (Button) mapView.findViewById(R.id.button_map);
-        buttonMap.setOnClickListener(new View.OnClickListener() {
+        buttonMap1 = (Button) mapView.findViewById(R.id.button_map);
+        buttonMap1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
