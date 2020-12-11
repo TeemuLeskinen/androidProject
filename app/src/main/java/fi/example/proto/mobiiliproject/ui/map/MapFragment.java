@@ -30,6 +30,7 @@ public class MapFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
+        //Luodaan View fragment_map xml
         View mapView = inflater.inflate(R.layout.fragment_map, container, false);
         //Määritetään button xml tiedostosta
         buttonMap1 = (Button) mapView.findViewById(R.id.button_map);

@@ -6,25 +6,29 @@
     android:layout_height="fill_parent"
     tools:context=".ui.map.MapFragment">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="320dp"
-        android:src="@drawable/location_banner"/>
 
+    <!--Mahdollistetaan scrollaus sormella ScrollViewillä -->
     <ScrollView
         android:id="@+id/ScrollViewID"
         android:layout_width="fill_parent"
         android:layout_height="match_parent">
-
+        <!--LinearLayout, orientation vertical -> asetetaan elementit alekkain -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="300dp"
+            android:paddingTop="0dp"
             android:paddingBottom="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp">
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
 
+            <!--Asetetaan tausta -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="320dp"
+                android:src="@drawable/location_banner"/>
+
+            <!--Otsikko -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,7 +41,7 @@
                 android:textAlignment="center"
                 android:text="@string/location_value"/>
 
-
+            <!--Informaatiotiedot -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,13 +52,16 @@
                 android:text="@string/location_desc"
                 android:textSize="24sp" />
 
+            <!--Karttanappi-->
             <Button
                 android:id="@+id/button_map"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/Kartta"
                 android:background="@drawable/custom_button"/>
 
+            <!--Slogan haettuna kuvatiedostona -->
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="320dp"
@@ -62,7 +69,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
 
 </RelativeLayout>
