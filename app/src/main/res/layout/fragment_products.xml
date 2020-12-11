@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress ALL -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +8,14 @@
     android:layout_height="fill_parent"
     tools:context=".ui.products.ProductsFragment">
 
+    <!--Koostuu RelativeLayoutista, joka toimii kokonaisuuden taustana
+     ScrollViewilla mahdollistetaan sivun selaaminen sormella
+     LinearLayout, orientation vertical -> mahdollistetaan tuotteiden listaus
+     LinearLayout, orientation horisontal -> asetetaan kuva tuotetietojen viereen
+     LinearLayout, orientation vertical -> asetetaan tuotetiedot ja napit alekkain -->
 
+    <!--Kuvat haetaan drawable kansiosta ja tekstit tallennetuista String tiedostoista
+        Parempi ratkaisu olisi hakea tiedot tietokannasta, mutta aikaa tälle ei jäänyt-->
 
     <ScrollView
         android:id="@+id/ScrollViewID"
@@ -349,7 +356,7 @@
                 android:paddingBottom="10dp">
 
                 <ImageView
-                    android:id="@+id/rossyp"
+                    android:id="@+id/joulup"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/joulup" />
