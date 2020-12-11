@@ -10,17 +10,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:src="@drawable/banner_slogan" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Etusivu"
+            android:text="Liikkuva ravintola Soppa"
             android:textSize="48sp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tervetuloa tekemään muutosta."
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-condensed"
             android:gravity="center_horizontal"/>
 
     </LinearLayout>
