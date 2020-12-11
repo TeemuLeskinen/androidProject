@@ -34,8 +34,10 @@ public class RegisterFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+        //Asetetaan register fragmentti view näkymäksi
         View view_register = inflater.inflate(R.layout.fragment_register, container, false);
 
+        //Määritetään luoduille olioille viittaukset xml tiedostoon
         btnRegister = view_register.findViewById(R.id.btn_register);
         text_input_first_name = view_register.findViewById(R.id.edit_text_first_name);
         text_input_last_name = view_register.findViewById(R.id.edit_text_last_name);
@@ -43,9 +45,11 @@ public class RegisterFragment extends Fragment {
         text_input_username = view_register.findViewById(R.id.username_register);
         text_input_password = view_register.findViewById(R.id.password_register);
 
+        //Asetetaan napinpainallukselle kuuntelija
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //String muuttujiin talletetaan rekisteröintilomakkeella syötetty tieto
                 final String firstname, lastname, email, username, password;
                 firstname = String.valueOf(text_input_first_name.getText());
                 lastname = String.valueOf(text_input_last_name.getText());
@@ -53,13 +57,16 @@ public class RegisterFragment extends Fragment {
                 username = String.valueOf(text_input_username.getText());
                 password = String.valueOf(text_input_password.getText());
 
+                //Jos kaikki kentät täytetty siirrytään eteenpäin
                 if(!firstname.equals("") && !lastname.equals("") && !email.equals("") && !username.equals("") && !password.equals("")) {
 
+                    //Luodaan olio Handler luokasta, millä voidaan lähettää ja prosessoida viestejä
                     Handler handler = new Handler(Looper.getMainLooper());
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
 
+                            //Luodaan taulukko, missä annetaan parametrin nimet
                             String[] field = new String[5];
                             field[0] = "firstname";
                             field[1] = "lastname";
@@ -67,6 +74,7 @@ public class RegisterFragment extends Fragment {
                             field[3] = "username";
                             field[4] = "password";
 
+                            //Toinen taulukko, missä määritellään data
                             String[] data = new String[5];
                             data[0] = firstname;
                             data[1] = lastname;
@@ -74,13 +82,16 @@ public class RegisterFragment extends Fragment {
                             data[3] = username;
                             data[4] = password;
 
+                            //Luodaan putData olio ja välitetään parametreina osoite, metodi ja taulukoiden tiedot, jolloin tiedot tallenetaan tietokantaan
+                            //signup.php rajapintafunktiolla käsitellään tiedot ja asetetaan tietokantaan
                             PutData putData = new PutData("http://192.168.1.6:1025/mobileProject/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
-                                    String result = putData.getResult();
+                                    String result = putData.getResult(); //Result muuttujaan tallenetaan saatu vastaus
+                                    //Jos vastaus sama kuin tässä määritetty, rekisteröityminen onnistunut ja siirrytään kirjautumissivulle
                                     if (result.equals("Rekisterointi onnistui")) {
                                         Toast.makeText(getContext(), result, Toast.LENGTH_SHORT).show();
-                                        Navigation.findNavController(view_register).navigate(R.id.action_nav_register_to_nav_sign_in);
+                                        Navigation.findNavController(view_register).navigate(R.id.action_nav_register_to_nav_sign_in); //Siirrytään kirjautumissivulle
                                     } else {
                                         Toast.makeText(getContext(), result, Toast.LENGTH_SHORT).show();
                                     }
