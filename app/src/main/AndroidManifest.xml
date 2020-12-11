@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fi.example.proto.mobiiliproject">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,6 +11,9 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.MobiiliProject">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"></meta-data>
 
         <activity
             android:name=".MainActivity"
