@@ -16,40 +16,39 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import fi.example.proto.mobiiliproject.R;
-//import fi.example.proto.mobiiliproject.palaute.PalauteViewModel;
+
 
 public class PalauteFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View palauteview = inflater.inflate(R.layout.fragment_palaute, container, false);
-        ImageView iv = palauteview.findViewById(R.id.imageButton);
-        TextView textView = palauteview.findViewById(R.id.textView2);
+
         Button palaute = palauteview.findViewById(R.id.sendEmail);
         palaute.setOnClickListener((view -> {sendEmail();}));
 
         return palauteview;
     }
-
+        //sähköpostinlähetys:
     @SuppressLint("IntentReset")
     private void sendEmail() {
 
             Log.i("Send email", "");
+                //määritellään lähetysosoite
             String[] TO = {"t8foju00@students.oamk.fi"};
-            //String[] CC = {""};
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
             emailIntent.setData(Uri.parse("mailto:"));
             emailIntent.setType("text/plain");
+                //vastaanottaja
             emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-            //emailIntent.putExtra(Intent.EXTRA_CC, CC);
+                //sähköpostin otsikko
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Palautetta");
-            //emailIntent.putExtra(Intent.EXTRA_TEXT, "");
 
             try {
                 startActivity(Intent.createChooser(emailIntent, "Send mail..."));
 
                 Log.i("Finished sending email...", "");
-            } catch (android.content.ActivityNotFoundException ex) {
+            } catch (android.content.ActivityNotFoundException ignored) {
 
             }
         }

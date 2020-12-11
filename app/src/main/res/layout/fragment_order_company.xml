@@ -11,7 +11,6 @@
         android:layout_width="332dp"
         android:layout_height="66dp"
         android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
         android:layout_marginTop="460dp"
         android:ems="10"
 
@@ -24,10 +23,9 @@
         android:layout_width="89dp"
         android:layout_height="22dp"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="460dp"
 
-        android:hint="Lisätietoja:"
+        android:hint="@string/more"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
         android:layout_marginTop="400dp"
         android:ems="10"
 
@@ -49,10 +46,9 @@
         android:layout_width="89dp"
         android:layout_height="22dp"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="400dp"
 
-        android:hint="Osoite:"
+        android:hint="@string/address"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,10 +57,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
         android:layout_marginTop="330dp"
         android:ems="10"
-        android:hint="Henkilöä/litraa"
+        android:hint="@string/order_amount"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -74,10 +69,9 @@
         android:layout_width="89dp"
         android:layout_height="22dp"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="330dp"
 
-        android:hint="Määrä:"
+        android:hint="@string/amount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,10 +80,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
-        android:layout_marginLeft="164dp"
         android:layout_marginTop="100dp"
         android:ems="10"
-        android:hint="00:00"
+        android:hint="@string/ordertime"
         android:inputType="time"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -99,9 +92,8 @@
         android:layout_width="89dp"
         android:layout_height="22dp"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="100dp"
-        android:text="Kellonaika:"
+        android:text="@string/time"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -109,7 +101,7 @@
         android:layout_width="319dp"
         android:layout_height="55dp"
         android:text="@string/order_page"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -123,10 +115,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
-        android:layout_marginLeft="164dp"
         android:layout_marginTop="170dp"
         android:ems="10"
-        android:hint="11/11/2020"
+        android:hint="@string/day"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -136,9 +127,8 @@
         android:layout_width="89dp"
         android:layout_height="22dp"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="190dp"
-        android:text="Päivä:"
+        android:text="@string/p_iv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,7 +137,6 @@
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="164dp"
-        android:layout_marginLeft="164dp"
         android:layout_marginTop="260dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -157,9 +146,8 @@
         android:layout_width="82dp"
         android:layout_height="29dp"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="260dp"
-        android:text="Ruokalaji:"
+        android:text="@string/ruokalaji"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -168,9 +156,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="252dp"
-        android:layout_marginLeft="252dp"
         android:layout_marginTop="528dp"
-        android:text="Lähetä"
+        android:text="@string/l_het"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
