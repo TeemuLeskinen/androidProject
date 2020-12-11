@@ -10,7 +10,6 @@ public class OrderViewModel extends ViewModel {
 
     public OrderViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Tilaussivu");
     }
 
     public LiveData<String> getText() {
