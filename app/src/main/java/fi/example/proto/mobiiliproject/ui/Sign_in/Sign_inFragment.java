@@ -35,37 +35,43 @@ public class Sign_inFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         Sign_inViewModel sign_inViewModel = new ViewModelProvider(this).get(Sign_inViewModel.class);
-        View view_log_in = inflater.inflate(R.layout.fragment_sign_in, container, false);
+        View view_log_in = inflater.inflate(R.layout.fragment_sign_in, container, false); //Asetetaan näkymäksi fragment_sign_in xml tiedostossa luotu näkymä
 
         text_input_username = view_log_in.findViewById(R.id.edit_text_username);
         text_input_password = view_log_in.findViewById(R.id.edit_text_password);
         btnLogIn = view_log_in.findViewById(R.id.btn_login) ;
         txtViewRegister = view_log_in.findViewById(R.id.textview_register) ;
 
+        //Asetetaan kuuntelija napinpainallukselle
         btnLogIn.setOnClickListener(new View.OnClickListener() {
         @Override
             public void onClick(View view) {
 
+            //String muuttujiin asetetaan käyttäjän antamat tiedot
             final String username, password;
-
             username = String.valueOf(text_input_username.getText());
             password = String.valueOf(text_input_password.getText());
 
             if(!username.equals("") && !password.equals("")) {
 
+                //Luodaan olio handler luokasta
                 Handler handler = new Handler(Looper.getMainLooper());
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
 
+                        //Luodaan taulukko, missä määritetään parametrien nimet
                         String[] field = new String[2];
                         field[0]= "username";
                         field[1]= "password";
 
+                        //Luodaan toinen taulukko, mihin laitetaan muuttujat, mitkä sisältävät käyttäjän syöttämät tiedot
                         String[] data = new String[2];
                         data[0] = username;
                         data[1] = password;
 
+                        //putDatalla viedään tiedot rajapintafunktiolle käyttäen parametreina osoitetta, metodia ja taulukoiden tietoja
+                        //Rajapintafunktiossa haetaan tietokannasta käyttäjän tiedot ja verrataan niitä syötettyihin
                         PutData putData = new PutData("http://192.168.1.6:1025/mobileProject/login.php", "POST", field, data);
                         if (putData.startPut()) {
                             if (putData.onComplete()) {
@@ -83,13 +89,13 @@ public class Sign_inFragment extends Fragment {
                 });
             }
             else {
-                Toast.makeText(getContext(), "Täytä kaikki kentät", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Täytä kaikki kentät", Toast.LENGTH_SHORT).show(); //Jos kaikkia kenttiä ei ole täytetty, näytetään toast
             }
         }
 
         });
 
-
+    //Kuuntelija klikattavalle tekstille, millä päästään rekisteröitymissivulle
     txtViewRegister.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {

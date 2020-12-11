@@ -1,87 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--suppress ALL -->
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Tämä näkymä on tehty kirjautumista varten. Näkymä on ScrollView:n sisällä,jotta sitä
+ voidaan scrollata. Näkymässä on käytetty constraint layouttia ja näkymän eri blokit on kiinnitetty toisiinsa. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".ui.Sign_in.Sign_inFragment">
-
-    <TextView
-        android:id="@+id/textView_sign_in"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:gravity="center"
-        android:text="@string/log_in"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:context=".ui.Sign_in.Sign_inFragment">
 
-    <EditText
-        android:id="@+id/edit_text_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@drawable/ic_user"
-        android:hint="@string/username"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_sign_in" />
+        <TextView
+            android:id="@+id/textView_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="@string/log_in"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edit_text_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@drawable/ic_password"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:password="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_username" />
+        <EditText
+            android:id="@+id/edit_text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:drawableRight="@drawable/ic_user"
+            android:hint="@string/username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_sign_in" />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="@string/log_in"
-        android:layout_marginLeft="75dp"
-        android:layout_marginRight="75dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text_password" />
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:drawableRight="@drawable/ic_password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:password="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_username" />
 
-    <TextView
-        android:id="@+id/textview_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:height="40dp"
-        android:gravity="center"
-        android:text="@string/new_user"
-        android:textSize="15dp"
-        android:textColor="@color/green_dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="75dp"
+            android:text="@string/log_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_password" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:height="40dp"
+            android:gravity="center"
+            android:text="@string/new_user"
+            android:textColor="@color/green_dark"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
