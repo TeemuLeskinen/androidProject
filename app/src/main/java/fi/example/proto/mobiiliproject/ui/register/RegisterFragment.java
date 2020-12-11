@@ -78,7 +78,7 @@ public class RegisterFragment extends Fragment {
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
-                                    if (result.equals("Sign Up Success")) {
+                                    if (result.equals("Rekisteröinti onnistui")) {
                                         Toast.makeText(getContext(), result, Toast.LENGTH_SHORT).show();
                                         Navigation.findNavController(view_register).navigate(R.id.action_nav_register_to_nav_sign_in);
                                     } else {
@@ -91,7 +91,7 @@ public class RegisterFragment extends Fragment {
                     });
                 }
                 else {
-                    Toast.makeText(getContext(), "All fields are required", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Täytä kaikki kentät", Toast.LENGTH_SHORT).show();
                 }
             }
 
