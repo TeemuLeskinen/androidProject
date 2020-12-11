@@ -78,7 +78,7 @@ public class RegisterFragment extends Fragment {
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
-                                    if (result.equals("Rekisteröinti onnistui")) {
+                                    if (result.equals("Rekisterointi onnistui")) {
                                         Toast.makeText(getContext(), result, Toast.LENGTH_SHORT).show();
                                         Navigation.findNavController(view_register).navigate(R.id.action_nav_register_to_nav_sign_in);
                                     } else {

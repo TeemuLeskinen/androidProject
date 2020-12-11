@@ -16,15 +16,27 @@ import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
+import com.google.android.material.internal.NavigationMenu;
+import com.google.android.material.internal.NavigationMenuView;
+import com.google.android.material.navigation.NavigationView;
+
+import fi.example.proto.mobiiliproject.MainActivity;
 import fi.example.proto.mobiiliproject.R;
+import fi.example.proto.mobiiliproject.ui.home.HomeFragment;
 
 public class CompanyOrderFragment extends Fragment {
+
     String[] categories = {"Hernekeitto", "Kalakeitto", "Riisipuuro"};
+    @SuppressLint("IntentReset")
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
+
         View orderview = inflater.inflate(R.layout.fragment_order_company, container, false);
+
 
         EditText time = orderview.findViewById(R.id.order_time_);
 
@@ -41,14 +53,12 @@ public class CompanyOrderFragment extends Fragment {
         EditText order_more = orderview.findViewById(R.id.more_);
 
 
-
         Spinner spinner = orderview.findViewById(R.id.spinner);
-        //spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
-        //
+
 
 
         ArrayAdapter aa = new ArrayAdapter(this.getActivity(), android.R.layout.simple_spinner_item, categories);
-        //aa.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+
         spinner.setAdapter(aa);
 
 
@@ -60,9 +70,11 @@ public class CompanyOrderFragment extends Fragment {
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
             emailIntent.setData(Uri.parse("mailto:"));
             emailIntent.setType("text/plain");
+                //lähetysosoite, TO määritelty yllä
             emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-            //emailIntent.putExtra(Intent.EXTRA_CC, CC);
+            //otsikko
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Tilaus");
+            //kerätään edittexteistä asiakkaan niihin laittamat tiedot sähköpostin tekstiksi
             emailIntent.putExtra(Intent.EXTRA_TEXT, time.getText().toString()+"\n"+order_date.getText().toString()
                     +"\n"+order_amount.getText().toString()+"\n"+spinner.getSelectedItem().toString()
                     +"\n"+order_address.getText().toString()+"\n"+order_more.getText().toString());
@@ -71,7 +83,7 @@ public class CompanyOrderFragment extends Fragment {
                 startActivity(Intent.createChooser(emailIntent, "Send mail..."));
 
                 Log.i("Finished sending", "");
-            } catch (android.content.ActivityNotFoundException ex) {
+            } catch (android.content.ActivityNotFoundException ignored) {
 
             }
 
@@ -83,26 +95,5 @@ public class CompanyOrderFragment extends Fragment {
         return orderview;
     }
 
-    /*@SuppressLint("IntentReset")
-    private void sendEmail() {
 
-        Log.i("Send email", "");
-        String[] TO = {"t8foju00@students.oamk.fi"};
-        //String[] CC = {""};
-        Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
-        //emailIntent.putExtra(Intent.EXTRA_CC, CC);
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Palautetta");
-        //emailIntent.putExtra(Intent.EXTRA_TEXT, "");
-
-        try {
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-
-            Log.i("Finished sending email...", "");
-        } catch (android.content.ActivityNotFoundException ex) {
-
-        }
-    }*/
 }
