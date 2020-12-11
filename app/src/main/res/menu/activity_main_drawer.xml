@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
-            android:title="@string/menu_home" />
+            android:title="@string/etusivu" />
         <item
             android:id="@+id/nav_products"
             android:icon="@drawable/ic_food"
@@ -24,5 +24,14 @@
             android:id="@+id/nav_map"
             android:icon="@drawable/ic_map"
             android:title="@string/Kartta" />
+        <item
+            android:id="@+id/nav_palaute"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/palaute"/>
+        <item
+            android:id="@+id/nav_company_order"
+            android:icon="@drawable/ic_feedback"
+            android:title="Yritystilaus"
+            android:visible="true"/>
     </group>
 </menu>

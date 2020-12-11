@@ -13,7 +13,7 @@ public class Sign_inViewModel extends ViewModel {
         mText.setValue("Kirjaudu");
     }
 
-    public LiveData<String> getText() {
+    /*public LiveData<String> getText() {
         return mText;
-    }
+    }*/
 }
