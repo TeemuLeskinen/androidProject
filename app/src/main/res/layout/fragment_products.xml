@@ -20,15 +20,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingTop="5dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
             android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="325dp"
+                android:layout_height="312dp"
                 android:src="@drawable/banner_slogan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -44,6 +53,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/menuKuvaus"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 android:fontFamily="sans-serif"
                 android:textSize="16dp" />
 
@@ -376,14 +387,8 @@
                         android:paddingBottom="10dp"
                         android:text="Tilaa" />
                 </LinearLayout>
-
             </LinearLayout>
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/banner_slogan" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

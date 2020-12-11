@@ -32,7 +32,7 @@
     <string name="compose_email">Lähetä sähköpostia</string>
     <string name="palautekuva">kalakeitto.jpg</string>
     <string name="menuOtsikko">RUOKALISTA</string>
-    <string name="menuKuvaus">Täydellinen myyntipuhe ja kuvaus tähän</string>
+    <string name="menuKuvaus">Käytämme ainoastaan kotimaisia raaka-aineita, sekä hyödynnämme lähituottajiemme ja kauppiaidemme ylijäämää. </string>
     <string name="menuVakio">Vakivalikoimamme</string>
     <string name="menuKausi">Kausivalikoimamme</string>
     <string name="annos1">KALAKEITTO</string>
@@ -47,4 +47,9 @@
     <string name="kuvaus3">Mureaksi haudutettu karjalanpaisti.</string>
     <string name="kuvaus4">Kaikkien lemppari makkarakeitto.</string>
     <string name="kuvaus5">Oululaisille omintakeinen rössypotut.</string>
+    <string name="kuvaus6">Suomalaiseen maitoon keitetty jouluinen riisipuuro.</string>
+    <string name="location_value">Sijaintimme</string>
+    <string name="location_desc">Täällä olemme.</string>
+    <string name="etusivu">Etusivu</string>
+    <string name="palaute">Palaute</string>
 </resources>

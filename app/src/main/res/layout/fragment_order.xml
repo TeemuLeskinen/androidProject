@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_margin="8dp"
-            android:text="@string/Kassalle"
+            android:text="string/Kassalle"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
     </LinearLayout>
 </ScrollView>

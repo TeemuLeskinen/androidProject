@@ -28,27 +28,25 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:textSize="48sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
                 android:textAlignment="center"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:text="@string/location_title"/>
+                android:text="@string/location_value"/>
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="10dp"
-                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
                 android:text="@string/location_desc"
-                android:textSize="16dp" />
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button_map"
@@ -56,8 +54,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Kartta"
                 android:background="@drawable/custom_button"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="320dp"
+                android:src="@drawable/slogan_s"/>
         </LinearLayout>
 
     </ScrollView>
+
+
 
 </RelativeLayout>
