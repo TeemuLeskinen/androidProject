@@ -52,7 +52,7 @@
     <string name="location_desc">Täällä olemme.</string>
     <string name="etusivu">Etusivu</string>
     <string name="palaute">Palaute</string>
-
+    <string name="Kassalle">Kassalle</string>Tilaussivun button kassalle
     <string name="order_page">Tässä voit tilata. Voit myös soittaa, puh. 987 654 321</string>
 
 
@@ -67,9 +67,7 @@
     <string name="address">Osoite:</string>
     <string name="more">Lisätietoja:</string>
 
-    <string name="Kassalle">Kassalle</string>
-
-    <string-array name="quantity_string_array">
+    <string-array name="quantity_string_array">Ostoskorin tuotemäärät
         <item>1</item>
         <item>2</item>
         <item>3</item>
