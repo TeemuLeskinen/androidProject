@@ -16,3 +16,6 @@ public class OrderViewModel extends ViewModel {
         return mText;
     }
 }
+/*public LiveData<String> getText() {
+        return mText;
+    }*/

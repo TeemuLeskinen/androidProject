@@ -11,7 +11,11 @@
     android:paddingRight="10dp"
     android:paddingBottom="20dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
-<LinearLayout
+
+    <!--Koostuu LinearLayoutista.
+        Näkymässä yrityksen logo ja nimi-->
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">

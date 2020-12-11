@@ -7,6 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+    <!--Koostuu ConstraintLayoutista ja LinearLayoutista, ostoskorissa tuoteen kuva, määrä ja
+        tuotteen poisto, ostosten kokonaissumma ja button kassalle-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

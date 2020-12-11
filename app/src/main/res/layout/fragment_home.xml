@@ -6,6 +6,8 @@
     android:layout_height="fill_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <!--Koostuu RelativeLayoutista ja LinearLayoutista.
+        Kuvassa etusivu-->
 
     <LinearLayout
         android:layout_width="match_parent"

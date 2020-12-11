@@ -6,6 +6,8 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_home">
 
+    <!--Navigaatiokartta-->
+
     <fragment
         android:id="@+id/nav_home"
         android:name="fi.example.proto.mobiiliproject.ui.home.HomeFragment"
